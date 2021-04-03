@@ -12,7 +12,7 @@ async function main()
 	const promises = [];
 
 	// Start compiling each file.
-	for(let i in files)
+	for(let i = 0; i < files.length; ++i)
 	{
 		const inFile 	= files[i];
 		const outFile 	= inFile.substr(0, inFile.lastIndexOf(".")) + ".css";
