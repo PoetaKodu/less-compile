@@ -8,11 +8,7 @@ async function main()
 	if (process.argv.length < 3)
 		throw "invalid parameter";
 
-	const {err, files} = await glob(process.argv[2]);
-	
-	if (err)
-		throw "Could not list .less files.";
-
+	const files = await glob(process.argv[2]);
 	const promises = [];
 
 	// Start compiling each file.
