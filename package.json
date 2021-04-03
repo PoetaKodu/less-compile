@@ -19,7 +19,7 @@
 		"url": "https://github.com/PoetaKodu/less-compile/issues"
 	},
 	"homepage": "https://github.com/PoetaKodu/less-compile#readme",
-	"devDependencies": {
+	"dependencies": {
 		"child_process": "^1.0.2",
 		"glob": "^7.1.6",
 		"lessc": "^1.0.2"
