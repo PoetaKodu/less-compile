@@ -35,9 +35,11 @@ async function main()
 	return 0;
 }
 
-try {
-	return await main();
-}
-catch(exc) {
-	console.error(`Error: an exception occurred.\nDetails: "${exc}"`);
-}
+(async ()=> {
+	try {
+		await main();
+	}
+	catch(exc) {
+		console.error(`Error: an exception occurred.\nDetails: "${exc}"`);
+	}
+})();
